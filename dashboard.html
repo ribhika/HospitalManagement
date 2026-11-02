@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Ribhika Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🏥 Ribhika Hospital</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="patients.html">Patients</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="billing.html">Billing</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="title-section">
+    <h2>Hospital Dashboard</h2>
+    <p>📊 Real-time overview of hospital metrics</p>
+  </section>
+
+  <!-- Big Stat Cards -->
+  <section class="dashboard-stats">
+    <div class="stat glass">👩‍⚕️ 135 Patients</div>
+    <div class="stat glass">🩺 25 Doctors</div>
+    <div class="stat glass">📅 42 Appointments</div>
+    <div class="stat glass">💰 ₹12,500 Billing</div>
+  </section>
+
+  <!-- Quick Access Modules -->
+  <section class="cards">
+    <div class="card">
+      <h3>Patients</h3>
+      <p>Manage patient records and admissions.</p>
+      <button onclick="window.location.href='patients.html'">Open</button>
+    </div>
+    <div class="card">
+      <h3>Doctors</h3>
+      <p>View doctor profiles and schedules.</p>
+      <button onclick="window.location.href='doctors.html'">Open</button>
+    </div>
+    <div class="card">
+      <h3>Appointments</h3>
+      <p>Book and track appointments.</p>
+      <button onclick="window.location.href='appointments.html'">Open</button>
+    </div>
+    <div class="card">
+      <h3>Billing</h3>
+      <p>Check invoices and payments.</p>
+      <button onclick="window.location.href='billing.html'">Open</button>
+    </div>
+    <div class="card">
+      <h3>Reports</h3>
+      <p>Generate and view hospital reports.</p>
+      <button onclick="window.location.href='reports.html'">Open</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <p>Home<br>Services<br>Contact Us</p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>FAQs<br>Help Desk</p>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Phone: +91 98765 43210<br>Email: info@ribhikahospital.com</p>
+      </div>
+    </div>
+    <p class="footer-end">© 2026 Ribhika Hospital | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>
